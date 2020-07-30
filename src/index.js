@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './pages/home';
 import CadastroVideo from './pages/cadastro/video';
 import {
   BrowserRouter,
@@ -12,7 +12,7 @@ import {
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" component={App} exact />
+      <Route path="/" component={Home} exact />
       <Route path="/cadastro/video" component={CadastroVideo} />
       <Route component={() => (<div>404</div>)} />
     </Switch>
